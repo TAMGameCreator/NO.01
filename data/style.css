@@ -29,7 +29,7 @@ h3{
 iframe{
   border-style: none;
   width: 100%;
-  height: 35vw;
+  height: 70vw;
 }
 img{
   font-size:0;
@@ -47,11 +47,6 @@ img{
   justify-content: flex-start;
   align-items: flex-start;
   background-color: #dbedf0;
-}
-iframe{
-   border-style: none;
-   width: 100%;
-   height: 200vw;
 }
 article{
   height: 100%;
@@ -153,6 +148,11 @@ aside{
     width: 100%;
     font-size:0;
     line-height:0;
+  }
+  iframe{
+  border-style: none;
+  width: 100%;
+  height: 70vw;
   }
   h1{
     font-size: 6vw;
