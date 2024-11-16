@@ -39,8 +39,8 @@ img{
 .contents{
   display: flex;
   justify-content: space-between;
-  align-items:stretch;
-  background-color: #dbedf0;
+  align-items: stretch;
+  background-color: #022561;
 }
 .juxta{
   display: flex;
