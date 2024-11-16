@@ -45,7 +45,12 @@
          window.addEventListener('message', (e) => {
            if (e.data.hasOwnProperty('iframeHeight')) {
              const iframe = document.getElementById('resizableIframe'); // resizableIframeはiframeのID名に置き換える
-             iframe.style.height = `${e.data.iframeHeight + 50}px`;
+             if(document.getElementById('article').style.height < e.data.iframeHeight){
+               iframe.style.height = `${e.data.iframeHeight + 50}px`;
+             }
+             else{
+               iframe.style.height = document.getElementById('article').style.height;
+             }
            }
          });
          </script>
