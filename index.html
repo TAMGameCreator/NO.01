@@ -32,7 +32,7 @@
              <div class="text">これからよろしくお願いします。</div>
            </article>
            <aside>
-             <iframe src="https://tamgamecreator.github.io/update/"width="100%"></iframe>
+             <iframe src="https://tamgamecreator.github.io/update/"width="100%" id="resizableIframe"></iframe>
            </aside>
          </div>
          <div class="contents end">
@@ -41,5 +41,13 @@
              <a href="http://TAMGameCreator.github.io/NO.02" class="Line-Item">第二回</a>
            </div>
          </div>
+         <script>
+         window.addEventListener('message', (e) => {
+           if (e.data.hasOwnProperty('iframeHeight')) {
+             const iframe = document.getElementById('resizableIframe'); // resizableIframeはiframeのID名に置き換える
+             iframe.style.height = `${e.data.iframeHeight}px`;
+           }
+         });
+         </script>
        </body>
 </html>
